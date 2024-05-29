@@ -4,6 +4,7 @@
 
 import * as Sentry from '@sentry/nextjs';
 
+// Add your Sentry DSN here to enable SDK and set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring. 
 const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN;
 const SENTRY_ENABLED = process.env.NEXT_PUBLIC_SERVER_SENTRY_ENABLED === 'true';
 const isDev = process.env.NODE_ENV === 'development';
