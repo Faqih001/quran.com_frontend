@@ -21,6 +21,7 @@ type CompleteSignupFormProps = {
  * otherwise, return normal user information form
  */
 
+// Complete Signup Form Component for users who have not completed their signup process yet
 const CompleteSignupForm: React.FC<CompleteSignupFormProps> = ({ requiredFields }) => {
   const { mutate } = useSWRConfig();
   const { t } = useTranslation('common');
